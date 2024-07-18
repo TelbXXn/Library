@@ -12,13 +12,37 @@
       <p class="logo">LIBRARY COLLECTION</p>
       <button class="signin">Sign In</button>
     </div>
+    <dialog>
+      <button autofocus>Close</button>
+      <div class="statbar">
+        <form>
+          <div>
+          <label for="title">Book Title:</label>
+          <input type="text" id="title" name="title"></div>
+          
+          <div>
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author"></div>
+          
+          <div>
+          <label for="pages">Pages:</label>
+          <input type="text" id="pages" name="pages"></div>
+          
+          <div> Have you read?
+          <br>
+          <input type="radio" id="read" name="read" value="yes">Yes</div>
+          <input type="radio"id="read" name="read" value="no">No</div>
+        </form>
+        <button class="end">Submit</button>
+
+      </div>
+    </dialog>
     <div class="main">
       <div class="library">
-      
+        <div class="adder"><button class="addbook">+</button></div>
+        <div class="selection"></div>
       </div>
-      <div class="statbar">
-      
-      </div>
-    </div>
+      <!-- <div class="statbar">
+    </div> -->
   </body>
 </html>

@@ -14,20 +14,37 @@ body {
   flex-direction: column;
 }
 
+::backdrop {
+  background-color: gray;
+  opacity: .75;
+}
+
+dialog {
+  justify-self: center;
+  height: 400px;
+  width: 400px;
+}
+
 .nav {
   width: 100%;
   height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
+  background-color: gainsboro;
 
+}
+
+.logo {
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .home,
 .signin {
-  border: 5px solid black;
+  border: 1px solid black;
   padding: 20px 50px;
+  /* box-shadow: 8px 4px #999; */
 }
 
 .home {
@@ -48,10 +65,60 @@ body {
 
 .library {
   flex: 4;
-  background-color: turquoise;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.adder,
+.selection {
+  border: 1px solid black;
+  width: 90%;
+
+}
+
+.adder {
+  flex: 10%;
+  background-color: blanchedalmond;
+  align-content: center;
+  text-align: center;
+}
+
+.addbook {
+  border-radius: 50%;
+  font-size: 16px;
+  padding: 20px 25px;
+
+}
+
+.selection {
+  flex: 90%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.selection > div {
+  height: 25%;
+  width: 25%;
+}
+
+
 
 .statbar {
   flex: 1;
   background-color: orange;
+  display: flex;
+  flex-direction: column;
+
+}
+
+input {
+  width: 50%;
+}
+
+form > div {
+  padding-bottom: 20px;
 }
