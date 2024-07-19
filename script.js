@@ -21,9 +21,9 @@ function displayBook() {
       if (myLibrary.indexOf(col) === bookCounter) {
         const div = document.createElement("div");
         div.classList.add("bookcard");
-        div.style.width = "30%";
         div.style.border = "5px solid black";
         div.style.margin = "10px";
+        div.style.boxShadow = "4px 5px 6px 0px rgba(0, 0, 0, 0.4)"
 
 
         const title = document.createElement("p");

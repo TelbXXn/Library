@@ -97,8 +97,10 @@ dialog {
 .selection {
   flex: 90%;
   background-color: antiquewhite;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  /* grid-auto-flow: column; */
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 350px 350px 350px;
   height: 100%;
   overflow-y: scroll;
 }
@@ -137,6 +139,7 @@ form > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
   
 }
 
