@@ -15,26 +15,33 @@
     <dialog>
       <button autofocus>Close</button>
       <div class="statbar">
-        <form>
+        <form method="dialog">
           <div>
-          <label for="title">Book Title:</label>
-          <input type="text" id="title" name="title"></div>
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" name="title" required>
+          </div>
           
           <div>
-          <label for="author">Author:</label>
-          <input type="text" id="author" name="author"></div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+          </div>
           
           <div>
-          <label for="pages">Pages:</label>
-          <input type="text" id="pages" name="pages"></div>
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages" name="pages" min=0 required>
+          </div>
           
           <div> Have you read?
           <br>
-          <input type="radio" id="read" name="read" value="yes">Yes</div>
-          <input type="radio"id="read" name="read" value="no">No</div>
-        </form>
-        <button class="end">Submit</button>
+            <input type="radio" id="read-yes" name="read" value="yes" checked>
+            <label for="read-yes">Yes</label>
 
+            <input type="radio"id="read" name="read" value="no">
+            <label for="read-no">No</label>
+          </div>
+          <button class="end" type="submit">Submit</button>
+
+        </form>
       </div>
     </dialog>
     <div class="main">
